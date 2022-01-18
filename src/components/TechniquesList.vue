@@ -1,12 +1,16 @@
 <template>
+
     <div class="row">
-        <ul v-for="group in techniques" v-bind:key="group.name" class="col-6 list-group">
-            <li class="list-group-item text-center"><h1>{{ group.name }}</h1></li>  
-            <li v-for="technique in group.techniques" v-bind:key="technique.name" class="list-group-item">
-                <b>{{ technique.name }}</b> <small>{{ technique.group }}</small> 
-            </li>
-        </ul>
+        <div v-for="group in techniques" v-bind:key="group.name" class="col-lg-12 col-xl-6">
+            <h2 class="text-center">{{ group.name }}</h2>
+            <ul class="list-group mb-4">
+                <li v-for="technique in group.techniques" v-bind:key="technique.name" class="list-group-item">
+                    <b>{{ technique.name }}</b> <small>{{ technique.group }}</small> 
+                </li>
+            </ul>
+        </div>
     </div>
+
 </template>
 
 <script>

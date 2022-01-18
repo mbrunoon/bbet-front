@@ -1,9 +1,14 @@
 <template>
   
-    <div class="container py-4">
+    <div class="container py-2">
 
         <div class='row mb-4'>
-          <div class='d-grid gap-2 d-flex justify-content-end'>
+          
+          <div class="col-8">
+            <h1>Black Belt Exam Training</h1>
+          </div> 
+
+          <div class='d-flex justify-content-end col-4'>
             <button class="btn btn-outline-primary" @click="reloadTechniquesList">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
@@ -11,10 +16,16 @@
                 </svg>
             </button>
           </div>
+
         </div>
 
         <TechniquesList v-bind:key="techiniquesListKey"/>
-        
+
+
+        <div class="row">
+          <a href="https://marcosbruno.com" target="blank" class="col-12 text-center small">Developed by Marcos Bruno</a>
+        </div>
+
     </div>
 
 </template>
