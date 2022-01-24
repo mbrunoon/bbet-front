@@ -4,15 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">  
 
+    <title><%= htmlWebpackPlugin.options.title || "Teste" %></title>
     <meta name="description" content="An application to show random judo techniques so that the Black Belt candidate can train to simulate what the exam day would be like">
     <meta name="keywords" content="judo black belt exam train, app judo train black belt, judo train black belt techniques">
-    <meta name="author" content="Marcos Bruno">
+    <meta name="author" content="Marcos Bruno">  
 
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="BBET | Black Belt Exam Training">
+    <meta itemprop="description" content="An application to show random judo techniques so that the Black Belt candidate can train to simulate what the exam day would be like">
+    <meta itemprop="image" content="<%= BASE_URL %>bbet-meta-img.jpg">
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bbet.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BBET | Black Belt Exam Training">
+    <meta property="og:description" content="An application to show random judo techniques so that the Black Belt candidate can train to simulate what the exam day would be like">
+    <meta property="og:image" content="<%= BASE_URL %>bbet-meta-img.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BBET | Black Belt Exam Training">
+    <meta name="twitter:description" content="An application to show random judo techniques so that the Black Belt candidate can train to simulate what the exam day would be like">
+    <meta name="twitter:image" content="<%= BASE_URL %>bbet-meta-img.jpg">
     
   </head>
   <body>
